@@ -5,17 +5,11 @@
 # - 3 -> 11
 # - 2 -> 10
 
-
-import random
-
 N = int(input('Введите число N: '))
-
-for i in range (N):
-    if N>=1:
+list = []
+for e in range(N):
+    if N>=1: 
         N1 = N%2
+        list.append(N1)
         N = N//2
-        print( N1, end= ' ')  
-        
-        
-    
-      
+print(list[::-1])         
