@@ -1,7 +1,13 @@
 # Задайте последовательность чисел. Напишите программу, 
 # которая выведет список неповторяющихся элементов исходной последовательности.
 
-a = [int(a) for a in input("Введите числа A, B, C, D через пробел: ").split()]
-print(f"{a[0]} {a[1]} {a[2]} {a[3]}")
-b=set(a)
-print(b)
+list = input("Введите несколько чисел через пробел: ").split()
+print(list)
+
+list1 = []
+for i in list:
+    while i not in list1:   
+         list1.append(i) 
+print(list1)           
+
+
